@@ -483,6 +483,12 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \href{https://github.com/\@github}{\faGithubSquare\acvHeaderIconSep\@github}%
         }%
+      \ifthenelse{\isundefined{\@bitbucket}}%
+        {}%
+        {%
+          \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
+          \href{https://bitbucket.org/\@bitbucket}{\faBitbucketSquare\acvHeaderIconSep\@bitbucket}%
+        }%
       \ifthenelse{\isundefined{\@gitlab}}%
         {}%
         {%
